@@ -7,6 +7,7 @@ module.exports = {
         body: "#17171f",
         "selected-text": "#a3a3ff",
         theme: "#FF3131",
+        "theme-dark": "#cc2727",
         nav: "#404053",
         secondary: "#9191a4",
         badge: "#3f3f51",
