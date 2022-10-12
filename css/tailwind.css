@@ -8,7 +8,7 @@
 
 .secondary-title::before{
     content: '';
-    @apply block w-12 h-2 bg-theme rounded-full mb-1;
+    @apply block w-12 h-1 bg-theme rounded-full mb-3;
 }
 
 .section-paragraph {
@@ -19,6 +19,41 @@
     @apply px-4 py-2 text-sm rounded bg-badge
 }
 
+* {
+    /* outline: 1px solid limegreen !important; */
+}
+
 html{
-    outline: limegreen !important;
+    overflow-x: hidden;
+    scroll-behavior: smooth; 
+}
+
+body {
+    background-color: #17171f;
+    transition: 2s all;
+    color: white;
+}
+
+/* .lightCyan {
+    background-color: #DC1C13;
+  }
+  
+.darkSkyBlue {
+background-color: #17171f;
+}
+
+.aquamarine {
+background-color: #ff7e71;
+}
+
+.electricBlue {
+background-color: #ffb25f;
+} */
+
+#topnav {
+    transition: all 0.5s ease;
+    z-index: 15;
+}
+.nav-sticky{
+    background-color: rgba(23, 23, 31, 0.8);
 }

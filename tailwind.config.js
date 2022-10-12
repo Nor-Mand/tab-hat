@@ -6,7 +6,7 @@ module.exports = {
       colors: {
         body: "#17171f",
         "selected-text": "#a3a3ff",
-        theme: "#FF3131",
+        theme: "#DC1C13",
         "theme-dark": "#cc2727",
         nav: "#404053",
         secondary: "#9191a4",
