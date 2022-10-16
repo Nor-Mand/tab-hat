@@ -20,12 +20,15 @@
 }
 
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     /* outline: 1px solid limegreen !important; */
 }
 
 html{
-    overflow-x: hidden;
     scroll-behavior: smooth; 
+    height: 100vh;
 }
 
 body {
@@ -34,26 +37,71 @@ body {
     color: white;
 }
 
-/* .lightCyan {
-    background-color: #DC1C13;
-  }
-  
-.darkSkyBlue {
-background-color: #17171f;
-}
-
-.aquamarine {
-background-color: #ff7e71;
-}
-
-.electricBlue {
-background-color: #ffb25f;
-} */
 
 #topnav {
     transition: all 0.5s ease;
     z-index: 15;
+    height: 80px;
 }
 .nav-sticky{
     background-color: rgba(23, 23, 31, 0.8);
+}
+
+
+@media (max-width: 768px){
+
+    .menu-open{
+        align-items: center;
+        background: rgba(220, 28, 19, 0.7);
+        position: fixed;
+        right: 0;
+        top:0;
+        height: 100%;
+        width: 70%;
+        z-index: 10;
+        transition: 0.5s all;
+    }
+
+    .menu-open ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+    }
+
+    .menu-open li{
+        font-size: 2.5rem;
+    }
+
+    .body-blur {
+        content: '';
+        width: 100%;
+        filter: blur(5px) brightness(0.7);
+        /* blur(5px) brightness(0.7) */
+    }
+
+    .menu-close{
+        align-items: center;
+        background: rgba(220, 28, 19, 0.7);
+        height: 100%;
+        position: fixed;
+        right: -550px;
+        top:0;
+        width: 70%;
+        z-index: 10;
+        transition: 0.5s all;
+    }
+
+    .menu-close ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+    }
+
+    .menu-close li{
+        font-size: 2.5rem;
+    }
 }
