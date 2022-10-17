@@ -2,7 +2,6 @@
 var body = document.getElementsByTagName("body")[0];
 window.onscroll = function () {
   var scroll = window.pageYOffset;
-  console.log(scroll);
   if (scroll < 700) {
     body.style.backgroundColor = "#17171f";
   } else if (scroll >= 700 && scroll < 1400) {
@@ -37,16 +36,20 @@ window.addEventListener("scroll", (ev) => {
 // Menu Burguer
 const menu = document.querySelector(".menu-burguer");
 const navbar = document.querySelector("nav");
-const bodyBlur = document.querySelector(".body");
+const menuItems = document.querySelectorAll(".menuItem");
 
-menu.addEventListener("click", function () {
+function toggleMenu() {
   if (navbar.classList.contains("menu-close")) {
     navbar.classList.remove("menu-close");
     navbar.classList.add("menu-open");
-    bodyBlur.classList.add("body-blur");
   } else {
     navbar.classList.remove("menu-open");
     navbar.classList.add("menu-close");
-    bodyBlur.classList.remove("body-blur");
   }
+}
+
+menu.addEventListener("click", toggleMenu);
+
+menuItems.forEach(function (menuItem) {
+  menuItem.addEventListener("click", toggleMenu);
 });
