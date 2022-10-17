@@ -1,6 +1,5 @@
-var body = document.getElementsByTagName("body")[0];
-
 // Color change Section
+var body = document.getElementsByTagName("body")[0];
 window.onscroll = function () {
   var scroll = window.pageYOffset;
   console.log(scroll);
@@ -35,6 +34,7 @@ window.addEventListener("scroll", (ev) => {
   windowScroll();
 });
 
+// Menu Burguer
 const menu = document.querySelector(".menu-burguer");
 const navbar = document.querySelector("nav");
 const bodyBlur = document.querySelector(".body");
