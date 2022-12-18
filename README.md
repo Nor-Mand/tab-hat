@@ -36,5 +36,7 @@ A Landing page to show fashion moda
 
     https://tap-hat.normandcode.com/
 
+    images from: https://www.pexels.com/
+
 ### Screenshots
-![alt text](https://github.com/Nor-Mand/tab-hat/blob/main/img/picture_bg.png)
+![alt text](https://github.com/Nor-Mand/tab-hat/blob/main/images/picture_1.png)
