@@ -72,6 +72,7 @@ body {
 
     .menu-open li{
         font-size: 2.5rem;
+        margin-left: 0 !important;
     }
 
     .menu-close{
